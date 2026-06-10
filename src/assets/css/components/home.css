@@ -180,7 +180,8 @@
 @media (min-width: 900px) {
   .natuurlijk { grid-template-columns: 1.1fr 0.9fr; padding: var(--space-xl); }
 }
-.natuurlijk-beeld img { border-radius: var(--radius-lg); width: 100%; aspect-ratio: 1; object-fit: cover; }
+.natuurlijk-beeld img,
+.natuurlijk-beeld video { border-radius: var(--radius-lg); width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--color-bg-warm); }
 
 /* Locatieblok */
 .locatie-grid { display: grid; gap: var(--space-lg); }

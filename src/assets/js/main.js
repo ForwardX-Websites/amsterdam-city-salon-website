@@ -71,6 +71,38 @@
   updateLengteToggleVisibility();
 })();
 
+// Ensure autoplay videos actually start (browsers can block autoplay on
+// power saver, data saver or when the video enters the viewport later)
+(function () {
+  var videos = document.querySelectorAll('video[autoplay]');
+  if (!videos.length) return;
+
+  function tryPlay(video) {
+    video.muted = true;
+    var p = video.play();
+    if (p && p.catch) p.catch(function () {});
+  }
+
+  videos.forEach(function (video) {
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && entry.target.paused) tryPlay(entry.target);
+        });
+      }, { threshold: 0.2 }).observe(video);
+    } else {
+      tryPlay(video);
+    }
+  });
+
+  // Last resort: first user interaction unlocks playback
+  function playAll() {
+    videos.forEach(function (video) { if (video.paused) tryPlay(video); });
+  }
+  document.addEventListener('touchstart', playAll, { once: true, passive: true });
+  document.addEventListener('click', playAll, { once: true });
+})();
+
 // Scroll reveal
 (function () {
   var items = document.querySelectorAll('.reveal');

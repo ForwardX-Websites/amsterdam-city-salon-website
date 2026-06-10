@@ -25,6 +25,20 @@
 @media (min-width: 900px) {
   .product-split { grid-template-columns: 1fr 1fr; }
 }
+.product-video { margin: 0; }
+.product-video video {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-warm);
+}
+.product-video figcaption {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+
 .product-usps { display: grid; gap: var(--space-sm); margin-top: var(--space-md); }
 .product-usps li { display: flex; gap: var(--space-sm); align-items: baseline; }
 .product-usps li::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary-light); transform: translateY(-2px); }
