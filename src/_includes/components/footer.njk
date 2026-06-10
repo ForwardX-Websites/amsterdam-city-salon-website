@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <img src="/assets/images/logo/logo-wit.png" alt="{{ site.name }} logo" width="140" height="105" loading="lazy">
+        <p>Al meer dan 25 jaar jouw vertrouwde adres tussen de Nieuwmarkt en het Waterlooplein.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Adres & contact</h3>
+        <address>
+          <p>{{ site.contact.address.street }}<br>{{ site.contact.address.zip }} {{ site.contact.address.city }}</p>
+          <p><a href="tel:{{ site.contact.phoneLink }}">{{ site.contact.phone }}</a><br>
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3>Openingstijden</h3>
+        {% include "components/openingstijden.njk" %}
+      </div>
+      <div class="footer-col">
+        <h3>Menu</h3>
+        <ul class="footer-nav">
+          <li><a href="/behandelingen/">Behandelingen & prijzen</a></li>
+          <li><a href="/team/">Team</a></li>
+          <li><a href="/producten/">Producten</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="{{ site.booking.link }}">Online afspraak maken</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>{{ site.name }} &copy; {{ "" | year }}</p>
+    </div>
+  </div>
+</footer>

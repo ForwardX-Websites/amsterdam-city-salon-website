@@ -1,0 +1,32 @@
+/* Kapsalon Design Studio — ForwardX */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+  /* Kleuren */
+  --color-primary:      #4C590C;
+  --color-primary-light:#91a432;
+  --color-dark:         #1d1d1b;
+  --color-bg:           #f6f6f4;
+  --color-bg-alt:       #edeee7;
+  --color-bg-warm:      #e5e7da;
+  --color-text:         #2a2f14;
+  --color-text-light:   #6e7261;
+
+  /* Typografie */
+  --font-heading:       'Josefin Sans', serif;
+  --font-body:          'Source Sans 3', sans-serif;
+
+  /* UI */
+  --radius:             8px;
+  --radius-lg:          calc(8px * 1.5);
+
+  /* Spacing */
+  --space-xs: 4px;  --space-sm: 8px;
+  --space-md: 16px; --space-lg: 32px;
+  --space-xl: 64px; --space-2xl:96px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --transition:0.25s ease;
+}

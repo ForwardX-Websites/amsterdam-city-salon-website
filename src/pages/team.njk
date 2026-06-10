@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: Team
+description: "Maak kennis met het team van Amsterdam City Salon: ervaren stylisten met een open oor voor al jouw vragen."
+permalink: /team/
+extraCss:
+  - components/pagina.css
+  - components/team.css
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Ons team</h1>
+    <p>Even kleurrijk als de buurt. Prettige, ervaren vakmensen met een open oor voor al jouw vragen.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="team-grid">
+      {% for lid in team %}
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{{ lid.foto }}" alt="Portret van {{ lid.naam }}, {{ lid.functie | lower }} bij {{ site.name }}" loading="lazy" width="450" height="450">
+        </div>
+        <div class="team-card__body">
+          <h3>{{ lid.naam }}</h3>
+          <div class="team-card__functie">{{ lid.functie }}</div>
+          <p>{{ lid.bio }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="slider-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      Swipe voor meer
+    </div>
+  </div>
+</section>
+
+{% include "components/booking-section.njk" %}

@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Behandelingen & prijzen
+description: "Knippen, kleuren, styling en baardverzorging in Amsterdam Centrum. Bekijk alle prijzen, gebaseerd op haarlengte. Gelijke prijzen voor mannen en vrouwen."
+permalink: /behandelingen/
+extraCss:
+  - components/pagina.css
+  - components/home.css
+  - components/behandelingen.css
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Behandelingen & prijzen</h1>
+    <p>Voor jouw haar nemen we alle tijd. Knippen, kleuren, stylen of een goed verzorgde baard: je vindt hier alles inclusief actuele prijzen.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include "components/behandelingen-slider.njk" %}
+  </div>
+</section>
+
+<section class="section section--alt" id="prijslijst">
+  <div class="container">
+    <div class="section-kop">
+      <span class="overline">Prijslijst</span>
+      <h2>Onze prijzen</h2>
+    </div>
+    {% include "components/prijslijst.njk" %}
+  </div>
+</section>
+
+<section class="section" id="body-skin">
+  <div class="container">
+    <div class="bodyskin">
+      <div>
+        <h2>Ook voor massage en gezichtsbehandeling</h2>
+        <p>Naast het kappersvak biedt John gespecialiseerde massages en schoonheidsbehandelingen met natuurlijke producten. Reserveren kan alleen telefonisch.</p>
+      </div>
+      <a href="tel:{{ site.contact.phoneBodySkinLink }}" class="btn btn--outline">Bel {{ site.contact.phoneBodySkin }}</a>
+    </div>
+  </div>
+</section>
+
+{% include "components/booking-section.njk" %}

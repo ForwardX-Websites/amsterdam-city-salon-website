@@ -1,0 +1,22 @@
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/bedankt/" class="contact-form">
+  <input type="hidden" name="form-name" value="contact">
+  <p class="hidden-field"><label>Niet invullen: <input name="bot-field"></label></p>
+
+  <div class="form-group">
+    <label for="naam">Naam *</label>
+    <input type="text" id="naam" name="naam" required autocomplete="name">
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" name="email" required autocomplete="email">
+  </div>
+  <div class="form-group">
+    <label for="telefoon">Telefoon</label>
+    <input type="tel" id="telefoon" name="telefoon" autocomplete="tel">
+  </div>
+  <div class="form-group">
+    <label for="bericht">Bericht *</label>
+    <textarea id="bericht" name="bericht" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn--primary">Versturen</button>
+</form>

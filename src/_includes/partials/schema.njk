@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "{{ site.name }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}",
+  "telephone": "+31204203845",
+  "email": "{{ site.contact.email }}",
+  "image": "{{ site.url }}/assets/images/salon/ontvangst.jpg",
+  "priceRange": "{{ site.schema.priceRange }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sint Antoniesbreestraat 124-126",
+    "postalCode": "{{ site.contact.address.zip }}",
+    "addressLocality": "{{ site.contact.address.city }}",
+    "addressCountry": "NL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ site.geo.lat }},
+    "longitude": {{ site.geo.lng }}
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Friday", "Saturday"], "opens": "09:30", "closes": "18:00" }
+  ],
+  "areaServed": ["Amsterdam", "Amsterdam Centrum", "Nieuwmarkt", "Waterlooplein"]
+}
+</script>

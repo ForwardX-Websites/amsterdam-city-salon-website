@@ -1,0 +1,121 @@
+---
+layout: layouts/base.njk
+title: Kapper in Amsterdam Centrum
+description: "Kapsalon aan de Sint Antoniesbreestraat in Amsterdam. Natuurlijke producten van Natulique, prijzen op basis van haarlengte en al meer dan 25 jaar een vertrouwd adres tussen Nieuwmarkt en Waterlooplein."
+permalink: /
+extraCss:
+  - components/home.css
+---
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-tekst">
+      <span class="overline">Kapsalon in hartje Amsterdam</span>
+      <h1>Natuurlijk mooi haar, midden in de stad</h1>
+      <p>Al meer dan 25 jaar het vertrouwde adres tussen de Nieuwmarkt en het Waterlooplein. Eerlijke prijzen, natuurlijke producten en alle tijd voor jouw haar.</p>
+      <div class="hero-acties">
+        <a href="{{ site.booking.link }}" class="btn btn--primary">Afspraak maken</a>
+        <a href="/behandelingen/" class="btn btn--outline">Bekijk prijzen</a>
+      </div>
+    </div>
+    <div class="hero-beeld">
+      <img src="/assets/images/salon/ontvangst.jpg" alt="De ontvangstruimte van Amsterdam City Salon met groene wanden en natuurlijke producten" width="480" height="600" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="usp-strip section--alt">
+  <div class="container">
+    <div class="usp-grid">
+      <div class="usp reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8" stroke-linecap="round"/></svg>
+        <h3>Gelijke prijzen voor iedereen</h3>
+        <p>Onze prijzen zijn gebaseerd op je haarlengte, niet op of je man of vrouw bent.</p>
+      </div>
+      <div class="usp reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21c-5 0-8-3.5-8-8 0-5.5 4.5-10 12-10 0 0 1 0 3-1-1 2-1 3-1 3 0 7.5-2.5 16-6 16z"/><path d="M4 21c4-6 8-9 13-13"/></svg>
+        <h3>100% natuurlijke producten</h3>
+        <p>We werken uitsluitend met Natulique: biologisch, vegan en duurzaam.</p>
+      </div>
+      <div class="usp reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17.5 6.5 21 8 13.5 3 9l6.5-.5z" stroke-linejoin="round"/></svg>
+        <h3>Meer dan 25 jaar vakmanschap</h3>
+        <p>Een klein, ervaren team dat de tijd voor je neemt en eerlijk advies geeft.</p>
+      </div>
+      <div class="usp reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+        <h3>Online afspraak maken</h3>
+        <p>Plan je bezoek wanneer het jou uitkomt, gewoon via de website.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-kop">
+      <span class="overline">Behandelingen</span>
+      <h2>Waar kunnen we je mee helpen?</h2>
+    </div>
+    {% include "components/behandelingen-slider.njk" %}
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container sfeer-inner">
+    <div class="sfeer-beeld reveal">
+      <img src="/assets/images/salon/spiegels.jpg" alt="Het interieur van Amsterdam City Salon met houten vloer en vintage lampen" loading="lazy" width="535" height="749">
+    </div>
+    <div class="sfeer-tekst">
+      <span class="overline">Over de salon</span>
+      <h2>Een salon zo kleurrijk als de buurt</h2>
+      <p>Amsterdam City Salon staat midden in de stad, letterlijk en figuurlijk. Voorheen bekend als The Hair Company en @Next Body, nu al meer dan 25 jaar een begrip aan de Sint Antoniesbreestraat.</p>
+      <p>Ons interieur is vintage en gebouwd op hergebruik van materialen. We werken met milieubewuste producten en nemen de tijd voor je haar. Een open oor voor al je vragen en eerlijk advies krijg je er altijd bij.</p>
+      <a href="/team/" class="btn btn--outline">Maak kennis met het team</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="natuurlijk reveal">
+      <div>
+        <span class="overline">Groen & duurzaam</span>
+        <h2>Natuurlijk, van product tot interieur</h2>
+        <p>We kiezen bewust voor het Deense merk Natulique: professionele haarverzorging met respect voor mens, dier en milieu.</p>
+        <ul>
+          <li>Gecertificeerde biologische shampoos, conditioners en kleuringen</li>
+          <li>Vegan en cruelty-free, zonder ammoniak, parabenen en sulfaten</li>
+          <li>Recyclebare verpakkingen, geproduceerd op windenergie</li>
+        </ul>
+        <a href="/producten/" class="btn btn--outline">Lees meer over Natulique</a>
+      </div>
+      <div class="natuurlijk-beeld">
+        <img src="/assets/images/behandelingen/kleuren.jpg" alt="Natuurlijke haarproducten in de salon" loading="lazy" width="600" height="600">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "components/booking-section.njk" %}
+
+<section class="section">
+  <div class="container locatie-grid">
+    <div class="locatie-info">
+      <span class="overline">Bezoek ons</span>
+      <h2>Midden in de binnenstad</h2>
+      <address>
+        <p><strong>{{ site.name }}</strong><br>
+        {{ site.contact.address.street }}<br>
+        {{ site.contact.address.zip }} {{ site.contact.address.city }}</p>
+        <p><a href="tel:{{ site.contact.phoneLink }}">{{ site.contact.phone }}</a><br>
+        <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+      </address>
+      <h3>Openingstijden</h3>
+      {% include "components/openingstijden.njk" %}
+    </div>
+    <div class="locatie-kaart reveal">
+      <iframe src="https://www.google.com/maps?q=Amsterdam%20City%20Salon%2C%20Sint%20Antoniesbreestraat%20124%2C%20Amsterdam&output=embed" title="Kaart met de locatie van Amsterdam City Salon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>

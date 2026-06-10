@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+h1 { font-size: clamp(2rem, 6vw, 3.25rem); }
+h2 { font-size: clamp(1.6rem, 4vw, 2.25rem); }
+h3 { font-size: 1.25rem; }
+
+p { margin-bottom: var(--space-md); }
+p:last-child { margin-bottom: 0; }
+
+a { transition: color var(--transition); }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section { padding: var(--space-xl) 0; }
+.section--alt { background: var(--color-bg-alt); }
+.section--warm { background: var(--color-bg-warm); }
+
+@media (min-width: 768px) {
+  .section { padding: var(--space-2xl) 0; }
+}
+
+/* Section intro pattern */
+.section-kop { max-width: 640px; margin-bottom: var(--space-lg); }
+.overline {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+.section-kop--center { margin-left: auto; margin-right: auto; text-align: center; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: 48px;
+  padding: 12px 28px;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn--sm { min-height: 44px; padding: 8px 20px; font-size: 15px; }
+
+.btn--primary { background: var(--color-primary); color: var(--color-white); }
+.btn--primary:hover { background: #3d4709; }
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+.btn--outline:hover { background: var(--color-primary); color: var(--color-white); }
+
+.btn--light { background: var(--color-bg); color: var(--color-primary); }
+.btn--light:hover { background: var(--color-white); }
+
+.btn--outline-light {
+  background: transparent;
+  color: var(--color-bg);
+  box-shadow: inset 0 0 0 2px rgba(246, 246, 244, 0.7);
+}
+.btn--outline-light:hover { background: rgba(246, 246, 244, 0.14); }
+
+/* Slider hint (mobile only) */
+.slider-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+.slider-hint svg { width: 14px; height: 14px; }
+@media (min-width: 640px) { .slider-hint { display: none; } }
+
+/* Opening hours table */
+.openingstijden { border-collapse: collapse; width: 100%; max-width: 320px; }
+.openingstijden th, .openingstijden td {
+  text-align: left;
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.openingstijden td { text-align: right; }
+.openingstijden tr.is-vandaag th,
+.openingstijden tr.is-vandaag td { font-weight: 600; }
+
+/* Booking section */
+.section--booking {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.section--booking h2 { color: var(--color-bg); margin-bottom: var(--space-md); }
+.section--booking p { max-width: 480px; margin: 0 auto var(--space-lg); color: rgba(246, 246, 244, 0.85); }
+.booking-actions { display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; }
+.booking-leaf { position: absolute; top: -30px; right: -20px; width: 180px; opacity: 0.12; transform: rotate(20deg); }
+.booking-leaf svg { width: 100%; }
+
+/* Utility */
+.hidden-field { display: none; }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }

@@ -1,0 +1,30 @@
+/* Generic page hero (subpages) */
+.page-hero {
+  background: var(--color-bg-alt);
+  padding: var(--space-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -140px;
+  right: -100px;
+  width: 320px;
+  height: 320px;
+  background: var(--color-bg-warm);
+  border-radius: 58% 42% 55% 45% / 45% 52% 48% 55%;
+}
+.page-hero .container { position: relative; z-index: 1; }
+.page-hero h1 { margin-bottom: var(--space-sm); }
+.page-hero p { max-width: 560px; font-size: 18px; color: var(--color-text-light); margin: 0; }
+
+/* Producten page */
+.product-split { display: grid; gap: var(--space-lg); align-items: center; }
+.product-split img { border-radius: var(--radius-lg); width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+@media (min-width: 900px) {
+  .product-split { grid-template-columns: 1fr 1fr; }
+}
+.product-usps { display: grid; gap: var(--space-sm); margin-top: var(--space-md); }
+.product-usps li { display: flex; gap: var(--space-sm); align-items: baseline; }
+.product-usps li::before { content: ""; flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary-light); transform: translateY(-2px); }

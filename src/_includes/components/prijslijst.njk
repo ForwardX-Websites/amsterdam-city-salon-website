@@ -1,0 +1,48 @@
+<div class="prijslijst" id="prijzen">
+  <div class="pf-lengte-uitleg">
+    <p>{{ prijzen.lengteIntro }}</p>
+    <ul class="pf-lengte-legenda">
+      {% for l in prijzen.lengteRichtlijn %}
+      <li><strong>{{ l.naam }}</strong> {{ l.uitleg }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="pf-tabs" role="tablist" aria-label="Behandelingscategorieën">
+    {% for cat in prijzen.categorieen %}
+    <button class="pf-tab{% if loop.first %} is-active{% endif %}" data-pf-main="acs-{{ cat.slug }}" role="tab" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">{{ cat.naam }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="pf-lengte-toggle" id="pfLengteToggle" role="group" aria-label="Kies je haarlengte">
+    <span class="pf-lengte-toggle__label">Haarlengte:</span>
+    <button class="pf-length-tab is-active" data-pf-length="kort" type="button">Kort</button>
+    <button class="pf-length-tab" data-pf-length="halflang" type="button">Halflang</button>
+    <button class="pf-length-tab" data-pf-length="lang" type="button">Lang</button>
+  </div>
+
+  {% for cat in prijzen.categorieen %}
+  <div class="pf-panel{% if loop.first %} is-active{% endif %}" id="pf-acs-{{ cat.slug }}">
+    {% if cat.intro %}<p class="pf-intro">{{ cat.intro }}</p>{% endif %}
+    {% for groep in cat.groepen %}
+    {% if groep.naam %}<h3 class="pf-groep-titel">{{ groep.naam }}</h3>{% endif %}
+    <div class="pf-list">
+      {% for item in groep.items %}
+      <div class="pf-item">
+        <div class="pf-item__info">
+          <div class="pf-item__name">{{ item.naam }}</div>
+          {% if item.beschrijving %}<div class="pf-item__note">{{ item.beschrijving }}</div>{% endif %}
+        </div>
+        {% if item.prijzen %}
+        <div class="pf-item__price" data-prijs-kort="{{ item.prijzen.kort }}" data-prijs-halflang="{{ item.prijzen.halflang }}" data-prijs-lang="{{ item.prijzen.lang }}">{{ item.prijzen.kort }}</div>
+        {% else %}
+        <div class="pf-item__price">{{ item.prijs }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    {% if cat.voetnoot %}<p class="pf-voetnoot">{{ cat.voetnoot }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+title: Contact & openingstijden
+description: "Bezoek Amsterdam City Salon aan de Sint Antoniesbreestraat 124-126 in Amsterdam, bel 020 420 3845 of stuur een bericht."
+permalink: /contact/
+extraCss:
+  - components/pagina.css
+  - components/form.css
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Kom langs of bel ons</h1>
+    <p>Je vindt ons aan de Sint Antoniesbreestraat, op loopafstand van de Nieuwmarkt en het Waterlooplein.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2>Adres & contact</h2>
+      <div class="contact-blok">
+        <h3>Hair</h3>
+        <p>Sint Antoniesbreestraat 124<br>{{ site.contact.address.zip }} {{ site.contact.address.city }}</p>
+        <p><a href="tel:{{ site.contact.phoneLink }}">{{ site.contact.phone }}</a></p>
+      </div>
+      <div class="contact-blok">
+        <h3>Body & Skin</h3>
+        <p>Sint Antoniesbreestraat 126<br>{{ site.contact.address.zip }} {{ site.contact.address.city }}</p>
+        <p><a href="tel:{{ site.contact.phoneBodySkinLink }}">{{ site.contact.phoneBodySkin }}</a></p>
+      </div>
+      <div class="contact-blok">
+        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+      </div>
+      <h3>Openingstijden</h3>
+      {% include "components/openingstijden.njk" %}
+      <p class="route-info">Met het OV: metrohalte Nieuwmarkt ligt om de hoek. Kom je met de fiets? Voor de deur is genoeg ruimte om te parkeren.</p>
+    </div>
+    <div>
+      <h2>Stuur een bericht</h2>
+      {% include "components/contact-form.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container contact-maps">
+    <iframe src="https://www.google.com/maps?q=Amsterdam%20City%20Salon%2C%20Sint%20Antoniesbreestraat%20124%2C%20Amsterdam&output=embed" title="Kaart met de locatie van Amsterdam City Salon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+{% include "components/booking-section.njk" %}

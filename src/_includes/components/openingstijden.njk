@@ -1,0 +1,10 @@
+<table class="openingstijden">
+  <tbody>
+    {% for dag, tijd in site.openingstijden %}
+    <tr data-dag="{{ dag }}">
+      <th scope="row">{{ dag | capitalize }}</th>
+      <td>{{ tijd }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+{
+  "name": "amsterdam-city-salon-website",
+  "version": "1.0.0",
+  "description": "Website Amsterdam City Salon - kapsalon Amsterdam (ForwardX)",
+  "scripts": {
+    "start": "eleventy --serve --port=8090",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

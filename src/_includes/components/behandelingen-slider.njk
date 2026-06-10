@@ -1,0 +1,18 @@
+<div class="behandelingen-grid">
+  {% for b in behandelingen %}
+  <a href="/behandelingen/#{{ b.slug }}" class="behandeling-card">
+    <div class="behandeling-card__media">
+      <img src="{{ b.foto }}" alt="{{ b.fotoAlt }}" loading="lazy" width="400" height="400">
+    </div>
+    <div class="behandeling-card__body">
+      <h3>{{ b.naam }}</h3>
+      <p>{{ b.kortBeschrijving }}</p>
+      <span class="behandeling-card__prijs">{{ b.vanafPrijs }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+<div class="slider-hint">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+  Swipe voor meer
+</div>

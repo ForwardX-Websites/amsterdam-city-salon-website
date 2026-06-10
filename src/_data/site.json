@@ -1,0 +1,44 @@
+{
+  "name": "Amsterdam City Salon",
+  "url": "https://www.amsterdamcitysalon.nl",
+  "description": "Kapsalon in hartje Amsterdam, tussen de Nieuwmarkt en het Waterlooplein. Natuurlijke producten van Natulique, gelijke prijzen voor iedereen, al meer dan 25 jaar een vertrouwd adres.",
+  "type": "kapsalon",
+  "contact": {
+    "phone": "020 420 3845",
+    "phoneLink": "+31204203845",
+    "phoneBodySkin": "020 330 0345",
+    "phoneBodySkinLink": "+31203300345",
+    "email": "info@amsterdamcitysalon.nl",
+    "address": {
+      "street": "Sint Antoniesbreestraat 124 - 126",
+      "city": "Amsterdam",
+      "zip": "1011 HB"
+    },
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Amsterdam+City+Salon+Sint+Antoniesbreestraat+124+Amsterdam"
+  },
+  "openingstijden": {
+    "maandag": "Gesloten",
+    "dinsdag": "09:30 - 18:00",
+    "woensdag": "09:30 - 18:00",
+    "donderdag": "Gesloten",
+    "vrijdag": "09:30 - 18:00",
+    "zaterdag": "09:30 - 18:00",
+    "zondag": "Gesloten"
+  },
+  "booking": {
+    "system": "salonhub",
+    "link": "#salonhub-create-client:amscitysalon-salon:amsterdam",
+    "script": "//widget.salonhub.nl/a/i.js"
+  },
+  "gtm": {
+    "containerId": ""
+  },
+  "geo": {
+    "lat": 52.3712,
+    "lng": 4.9035
+  },
+  "schema": {
+    "type": "HairSalon",
+    "priceRange": "€€"
+  }
+}
