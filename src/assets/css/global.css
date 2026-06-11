@@ -1,4 +1,10 @@
 /* Global styles */
+/* Block horizontal panning on mobile; clip avoids creating a scroll container */
+html, body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   font-family: var(--font-body);
   font-size: 16px;

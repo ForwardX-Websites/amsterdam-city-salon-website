@@ -27,8 +27,7 @@
   },
   "booking": {
     "system": "salonhub",
-    "link": "#salonhub-create-client:amscitysalon-salon:amsterdam",
-    "script": "//widget.salonhub.nl/a/i.js"
+    "link": "https://afspraak.salonhub.nl/amscitysalon/amsterdam/19a2ecc9-3181-4383-8fe2-215a863fb5cb/welcome"
   },
   "gtm": {
     "containerId": ""

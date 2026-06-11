@@ -1,10 +1,11 @@
 /* Header */
+/* No backdrop-filter here: it would turn the header into the containing
+   block for the fixed mobile nav, trapping the menu inside the header bar */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(246, 246, 244, 0.94);
-  backdrop-filter: blur(8px);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-bg-warm);
 }
 
@@ -76,10 +77,17 @@
     background: var(--color-bg);
     padding: var(--space-lg) 20px;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    /* visibility keeps the closed panel out of reach so mobile browsers
+       cannot pan the page sideways towards it */
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0s linear 0.3s;
     overflow-y: auto;
   }
-  .site-nav.is-open { transform: translateX(0); }
+  .site-nav.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s ease;
+  }
   .site-nav ul { display: flex; flex-direction: column; gap: var(--space-md); }
   .site-nav a {
     display: block;

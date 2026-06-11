@@ -1,12 +1,21 @@
 {
   "lastSynced": "2026-06-10",
-  "source": "https://www.amsterdamcitysalon.nl/prijslijst/",
-  "provider": "oude-website",
+  "source": "https://public.salonhub.nl/v2/api/OnlineAppointment.Remote.Treatments/get (client=amscitysalon)",
+  "provider": "salonhub",
   "lengteIntro": "Onze prijzen zijn gebaseerd op de lengte van je haar, niet op of je man of vrouw bent. Bij ons is iedereen gelijk.",
   "lengteRichtlijn": [
-    { "naam": "Kort", "uitleg": "tot aan de oorlel" },
-    { "naam": "Halflang", "uitleg": "tot aan de oksel" },
-    { "naam": "Lang", "uitleg": "vanaf de oksel" }
+    {
+      "naam": "Kort",
+      "uitleg": "tot aan de oorlel"
+    },
+    {
+      "naam": "Halflang",
+      "uitleg": "tot aan de oksel"
+    },
+    {
+      "naam": "Lang",
+      "uitleg": "vanaf de oksel"
+    }
   ],
   "categorieen": [
     {
@@ -16,20 +25,55 @@
       "groepen": [
         {
           "items": [
-            { "naam": "Volwassenen", "prijzen": { "kort": "€ 51,00", "halflang": "€ 61,50", "lang": "€ 72,00" } },
-            { "naam": "Jeugd 13 t/m 17 jaar", "prijzen": { "kort": "€ 41,00", "halflang": "€ 49,00", "lang": "€ 57,50" } },
-            { "naam": "Kind 6 t/m 12 jaar", "prijs": "€ 34,50" },
-            { "naam": "Kind 0 t/m 5 jaar", "prijs": "€ 22,50" },
-            { "naam": "Tondeuse", "prijs": "€ 34,50" },
-            { "naam": "Kaal", "prijs": "€ 25,00" }
+            {
+              "naam": "Volwassenen",
+              "prijzen": {
+                "kort": "€ 51,00",
+                "halflang": "€ 61,00",
+                "lang": "€ 71,00"
+              }
+            },
+            {
+              "naam": "Jeugd 13 t/m 17 jaar",
+              "prijzen": {
+                "kort": "€ 41,00",
+                "halflang": "€ 49,00",
+                "lang": "€ 57,50"
+              }
+            },
+            {
+              "naam": "Kind 6 t/m 12 jaar",
+              "prijs": "€ 34,50"
+            },
+            {
+              "naam": "Kind 0 t/m 5 jaar",
+              "prijs": "€ 22,50"
+            },
+            {
+              "naam": "Tondeuse / buzz cut",
+              "prijs": "€ 34,50"
+            },
+            {
+              "naam": "Kaal scheren",
+              "prijs": "€ 24,50"
+            }
           ]
         },
         {
           "naam": "Bijwerken",
           "items": [
-            { "naam": "Pony", "prijs": "€ 13,00" },
-            { "naam": "Contour korte coupes", "prijs": "€ 18,50" },
-            { "naam": "Zij- en achterkant korte coupes", "prijs": "€ 25,00" }
+            {
+              "naam": "Pony",
+              "prijs": "€ 13,00"
+            },
+            {
+              "naam": "Contour korte coupes",
+              "prijs": "€ 18,50"
+            },
+            {
+              "naam": "Zij- en achterkant korte coupes",
+              "prijs": "€ 25,00"
+            }
           ]
         }
       ]
@@ -40,10 +84,36 @@
       "groepen": [
         {
           "items": [
-            { "naam": "Wassen en föhnen of stylen", "prijzen": { "kort": "€ 35,00", "halflang": "€ 43,50", "lang": "€ 54,00" } },
-            { "naam": "Maskerbehandeling", "beschrijving": "wassen, masker en drogen", "prijzen": { "kort": "€ 34,00", "halflang": "€ 39,50", "lang": "€ 46,00" } },
-            { "naam": "Hoofdhuidbehandeling", "beschrijving": "wassen en drogen", "prijzen": { "kort": "€ 38,00", "halflang": "€ 44,00", "lang": "€ 50,00" } },
-            { "naam": "Haar opsteken", "prijs": "Op aanvraag" }
+            {
+              "naam": "Wassen en föhnen of stylen",
+              "prijzen": {
+                "kort": "€ 35,00",
+                "halflang": "€ 43,50",
+                "lang": "€ 54,00"
+              }
+            },
+            {
+              "naam": "Maskerbehandeling",
+              "beschrijving": "wassen, masker en drogen",
+              "prijzen": {
+                "kort": "€ 34,00",
+                "halflang": "€ 39,50",
+                "lang": "€ 46,00"
+              }
+            },
+            {
+              "naam": "Hoofdhuidbehandeling",
+              "beschrijving": "wassen en drogen",
+              "prijzen": {
+                "kort": "€ 38,00",
+                "halflang": "€ 44,00",
+                "lang": "€ 50,00"
+              }
+            },
+            {
+              "naam": "Haar opsteken",
+              "prijs": "Op aanvraag"
+            }
           ]
         }
       ]
@@ -56,17 +126,76 @@
       "groepen": [
         {
           "items": [
-            { "naam": "Uitgroei (max. 4 weken)", "prijzen": { "kort": "€ 57,50", "halflang": "€ 58,50", "lang": "€ 59,50" } },
-            { "naam": "Uitgroei + föhnen", "prijzen": { "kort": "€ 77,50", "halflang": "€ 85,50", "lang": "€ 97,50" } },
-            { "naam": "Totale kleuring", "prijzen": { "kort": "€ 78,00", "halflang": "€ 99,50", "lang": "€ 121,50" } },
-            { "naam": "Glossing / Shine", "prijs": "In overleg" }
+            {
+              "naam": "Uitgroei en drogen",
+              "beschrijving": "uitgroei max. 4 weken",
+              "prijzen": {
+                "kort": "€ 57,50",
+                "halflang": "€ 58,50",
+                "lang": "€ 59,50"
+              }
+            },
+            {
+              "naam": "Uitgroei en föhnen",
+              "prijzen": {
+                "kort": "€ 77,50",
+                "halflang": "€ 85,50",
+                "lang": "€ 97,50"
+              }
+            },
+            {
+              "naam": "Uitgroei en knippen",
+              "prijzen": {
+                "kort": "€ 100,00",
+                "halflang": "€ 111,00",
+                "lang": "€ 122,00"
+              }
+            },
+            {
+              "naam": "Totale kleuring en drogen",
+              "prijzen": {
+                "kort": "€ 74,00",
+                "halflang": "€ 95,50",
+                "lang": "€ 116,00"
+              }
+            },
+            {
+              "naam": "Totale kleuring en föhnen",
+              "prijzen": {
+                "kort": "€ 94,00",
+                "halflang": "€ 120,50",
+                "lang": "€ 151,00"
+              }
+            },
+            {
+              "naam": "Totale kleuring en knippen",
+              "prijzen": {
+                "kort": "€ 119,50",
+                "halflang": "€ 151,00",
+                "lang": "€ 181,50"
+              }
+            },
+            {
+              "naam": "Glossing / Shine",
+              "prijs": "In overleg"
+            }
           ]
         },
         {
           "naam": "Toeslagen",
           "items": [
-            { "naam": "Verf of blondeerpoeder (per 10 gram)", "prijs": "€ 11,00" },
-            { "naam": "Toner", "prijzen": { "kort": "€ 28,50", "halflang": "€ 39,50", "lang": "€ 50,50" } }
+            {
+              "naam": "Verf of blondeerpoeder (per 10 gram)",
+              "prijs": "€ 11,00"
+            },
+            {
+              "naam": "Toner",
+              "prijzen": {
+                "kort": "€ 28,50",
+                "halflang": "€ 39,50",
+                "lang": "€ 50,50"
+              }
+            }
           ]
         }
       ]
@@ -74,15 +203,50 @@
     {
       "slug": "highlights",
       "naam": "Highlights & lowlights",
-      "intro": "Alle prijzen exclusief toner.",
+      "intro": "Inclusief drogen. Liever ook geföhnd of geknipt? Dat kan, je ziet de prijs bij het online boeken.",
       "groepen": [
         {
           "items": [
-            { "naam": "Kwart hoofd", "beschrijving": "T-zone, 15 folies", "prijzen": { "kort": "€ 58,50", "halflang": "€ 64,50", "lang": "€ 70,50" } },
-            { "naam": "Half hoofd", "beschrijving": "U-zone, 25 folies", "prijzen": { "kort": "€ 85,50", "halflang": "€ 91,50", "lang": "€ 97,50" } },
-            { "naam": "Driekwart hoofd", "beschrijving": "U-zone en zijkanten, 45 folies", "prijzen": { "kort": "€ 104,00", "halflang": "€ 110,00", "lang": "€ 116,00" } },
-            { "naam": "Heel hoofd", "beschrijving": "60 folies", "prijzen": { "kort": "€ 123,50", "halflang": "€ 130,00", "lang": "€ 136,50" } },
-            { "naam": "Balayage / Ombré", "prijs": "In overleg" }
+            {
+              "naam": "Kwart hoofd",
+              "beschrijving": "T-zone, 15 folies",
+              "prijzen": {
+                "kort": "€ 56,00",
+                "halflang": "€ 61,50",
+                "lang": "€ 67,00"
+              }
+            },
+            {
+              "naam": "Half hoofd",
+              "beschrijving": "U-zone, 25 folies",
+              "prijzen": {
+                "kort": "€ 81,50",
+                "halflang": "€ 87,00",
+                "lang": "€ 93,50"
+              }
+            },
+            {
+              "naam": "Driekwart hoofd",
+              "beschrijving": "U-zone en zijkanten, 45 folies",
+              "prijzen": {
+                "kort": "€ 99,00",
+                "halflang": "€ 104,50",
+                "lang": "€ 110,00"
+              }
+            },
+            {
+              "naam": "Heel hoofd",
+              "beschrijving": "60 folies",
+              "prijzen": {
+                "kort": "€ 117,50",
+                "halflang": "€ 123,00",
+                "lang": "€ 130,00"
+              }
+            },
+            {
+              "naam": "Balayage / Ombré",
+              "prijs": "In overleg"
+            }
           ]
         }
       ]
@@ -94,9 +258,30 @@
       "groepen": [
         {
           "items": [
-            { "naam": "Föhnen met borstels", "prijzen": { "kort": "€ 20,00", "halflang": "€ 27,00", "lang": "€ 38,00" } },
-            { "naam": "Maskerbehandeling", "prijzen": { "kort": "€ 23,00", "halflang": "€ 26,00", "lang": "€ 29,00" } },
-            { "naam": "Hoofdhuidbehandeling", "prijzen": { "kort": "€ 29,00", "halflang": "€ 32,00", "lang": "€ 35,00" } }
+            {
+              "naam": "Föhnen met borstels",
+              "prijzen": {
+                "kort": "€ 20,00",
+                "halflang": "€ 27,00",
+                "lang": "€ 38,00"
+              }
+            },
+            {
+              "naam": "Maskerbehandeling",
+              "prijzen": {
+                "kort": "€ 23,00",
+                "halflang": "€ 26,00",
+                "lang": "€ 29,00"
+              }
+            },
+            {
+              "naam": "Hoofdhuidbehandeling",
+              "prijzen": {
+                "kort": "€ 29,00",
+                "halflang": "€ 32,00",
+                "lang": "€ 35,00"
+              }
+            }
           ]
         }
       ]
@@ -104,11 +289,24 @@
     {
       "slug": "baard",
       "naam": "Baardverzorging",
-      "voetnoot": "Bij boeking van een combi haar- en baardverzorging krijg je € 5,00 korting.",
+      "voetnoot": "Knippen en baardverzorging combineren? Als combi-afspraak ben je voordeliger uit, je ziet de combiprijs bij het online boeken.",
       "groepen": [
         {
           "items": [
-            { "naam": "Trimmen", "beschrijving": "baard op 1 lengte trimmen met tondeuse", "prijs": "€ 17,50" }
+            {
+              "naam": "Baard trimmen",
+              "beschrijving": "baard op 1 lengte trimmen met tondeuse",
+              "prijs": "€ 23,00"
+            },
+            {
+              "naam": "Baard modelleren",
+              "prijs": "€ 38,00"
+            },
+            {
+              "naam": "Baard scheren",
+              "beschrijving": "tondeuse of klassiek",
+              "prijs": "€ 38,00"
+            }
           ]
         }
       ]
@@ -120,9 +318,18 @@
       "groepen": [
         {
           "items": [
-            { "naam": "Massage", "prijs": "€ 67,50" },
-            { "naam": "Gezichtsbehandeling", "prijs": "€ 67,50" },
-            { "naam": "Pedicure", "prijs": "€ 38,50" }
+            {
+              "naam": "Massage",
+              "prijs": "€ 67,50"
+            },
+            {
+              "naam": "Gezichtsbehandeling",
+              "prijs": "€ 67,50"
+            },
+            {
+              "naam": "Pedicure",
+              "prijs": "€ 38,50"
+            }
           ]
         }
       ]

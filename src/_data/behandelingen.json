@@ -2,10 +2,10 @@
   {
     "slug": "knippen",
     "naam": "Knippen",
-    "vanafPrijs": "vanaf € 22,50",
+    "vanafPrijs": "vanaf € 51,00",
     "kortBeschrijving": "Met speciale Japanse scharen, altijd inclusief wassen, hoofdmassage en föhnen.",
     "foto": "/assets/images/behandelingen/knippen.jpg",
-    "fotoAlt": "Japanse kniptechniek scharen op houten werkblad in de salon"
+    "fotoAlt": "Stylist knipt lang haar in de salon"
   },
   {
     "slug": "kleuren",
@@ -13,7 +13,7 @@
     "vanafPrijs": "vanaf € 57,50",
     "kortBeschrijving": "Van subtiel accent tot complete transformatie, met de natuurlijke kleuren van Natulique.",
     "foto": "/assets/images/behandelingen/kleuren.jpg",
-    "fotoAlt": "Haarkleuring in de salon"
+    "fotoAlt": "Highlights zetten met folies in de salon"
   },
   {
     "slug": "styling",
@@ -21,14 +21,14 @@
     "vanafPrijs": "vanaf € 35,00",
     "kortBeschrijving": "Wassen, föhnen en stylen. Met een kleine hoofdmassage die je wereld even tot rust brengt.",
     "foto": "/assets/images/behandelingen/styling.jpg",
-    "fotoAlt": "Föhnen en styling in de salon"
+    "fotoAlt": "Haar fohnen met ronde borstel in de salon"
   },
   {
     "slug": "baard",
     "naam": "Baardverzorging",
-    "vanafPrijs": "vanaf € 17,50",
+    "vanafPrijs": "vanaf € 23,00",
     "kortBeschrijving": "Knippen, trimmen, modelleren of scheren door onze ervaren barbier.",
     "foto": "/assets/images/behandelingen/baard.jpg",
-    "fotoAlt": "Baardverzorging door de barbier"
+    "fotoAlt": "Baard trimmen door de barbier"
   }
 ]
